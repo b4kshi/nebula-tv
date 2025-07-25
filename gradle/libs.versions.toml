@@ -1,13 +1,13 @@
 [versions]
 agp = "8.11.1"
-kotlin = "2.0.21"
-coreKtx = "1.10.1"
-appcompat = "1.6.1"
-composeBom = "2024.09.00"
-tvFoundation = "1.0.0-alpha07"
-tvMaterial = "1.0.0-alpha07"
-lifecycleRuntimeKtx = "2.6.1"
-activityCompose = "1.8.0"
+kotlin = "2.2.0"
+coreKtx = "1.16.0"
+appcompat = "1.7.1"
+composeBom = "2025.07.00"
+tvFoundation = "1.0.0-alpha12"
+tvMaterial = "1.0.1"
+lifecycleRuntimeKtx = "2.9.2"
+activityCompose = "1.10.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

@@ -1,4 +1,11 @@
-<resources>
-
-    <style name="Theme.Nebula" parent="Theme.AppCompat.DayNight.NoActionBar" />
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Nebula" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+        <item name="android:colorPrimary">@color/tv_primary</item> <!-- Define these colors -->
+        <item name="android:colorPrimaryDark">@color/tv_primary_dark</item>
+        <item name="android:colorAccent">@color/tv_accent</item>
+        <item name="android:windowBackground">@color/tv_background</item>
+    </style>
 </resources>
