@@ -16,6 +16,7 @@ import androidx.tv.material3.MaterialTheme // Use M3 Theme
 import androidx.tv.material3.Surface
 import androidx.tv.material3.Text // Use M3 Text
 import com.example.nebula.ui.theme.NebulaTheme
+import androidx.compose.ui.text.style.TextAlign
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalTvMaterial3Api::class) // Opt-in for Material 3 TV components
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
             NebulaTheme { // This is from androidx.tv.material3
                 Surface( // Use androidx.tv.material3.Surface
                     modifier = Modifier.fillMaxSize(),
-                    shape = RectangleShape // TV apps often use RectangleShape
+                    shape = RectangleShape, // TV apps often use RectangleShape
                 ) {
                     // This will be replaced by your main launcher composable
                     LauncherHomeScreen()
@@ -43,6 +44,7 @@ fun LauncherHomeScreen() {
     Text(
         text = "Welcome to Nebula TV!",
         style = MaterialTheme.typography.labelLarge,
+        textAlign = TextAlign.Center
     )
     // TODO: Start building your Unified Launcher Home here based on PRD
     // - App grid panel
