@@ -10,7 +10,8 @@
         android:required="true" />
 
     <!--This permission is required for the Launcher, ignore the warning-->
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
