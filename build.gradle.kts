@@ -16,6 +16,7 @@ buildscript {
         maven {
             url = uri("https://maven.mozilla.org/maven2/")
         }
+        gradlePluginPortal()
     }
 }
 plugins {

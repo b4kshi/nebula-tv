@@ -15,6 +15,22 @@ androidxHiltNavigationCompose = "1.2.0"
 geckoviewExt="100.0.20220425210429"
 lifecycleViewModel="2.9.2"
 coroutinesExt="1.10.2"
+browserExt="1.8.0"
+webkitExt="1.14.0"
+recyclerviewExt="1.4.0"
+recyclerviewSelectionExt="1.2.0"
+splashScreen="1.0.1"
+roleManagerCompat="1.1.0"
+coreAnimation="1.0.0"
+corePerformance="1.0.0"
+coreRemoteViews="1.1.0"
+dynamicanimation="1.1.0"
+navigationVer="1.0.0-alpha05"
+cardview="1.0.0"
+constraintlayout="1.1.1"
+coordinatorlayout="1.3.0"
+fragment="1.8.8"
+viewpager="1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,17 +54,30 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.r
 hilt-core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
 hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
 hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
-#geckoview = { group = "org.mozilla.geckoview", name = "geckoview-nightly", version.ref = "geckoviewExt" }
-#androidx-compose-material3-adaptive = { group = "androidx.compose.material3", name = "material3-adaptive" }
-#androidx-compose-material3-adaptivelayout = { group = "androidx.compose.material3", name = "material3-adaptivelayout" }
-#androidx-compose-material3-adaptivenavigation = { group = "androidx.compose.material3", name = "material3-adaptivenavigation" }
-#androidx-compose-material3-adaptivenavigationsuite = { group = "androidx.compose.material3", name = "material3-adaptivenavigationsuite" }
-#androidx-compose-material3-windowsizeclass = { group = "androidx.compose.material3", name = "material3-windowsizeclass" }
-#androidx-compose-core-splashscreen = { group = "androidx.core", name = "splashscreen", version.ref = "composeBom" }
-#androidx-browser = { group = "androidx.browser", name = "browser" }
-#androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview" }
+geckoview = { group = "org.mozilla.geckoview", name = "geckoview", version.ref = "geckoviewExt" }
+androidx-compose-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashScreen" }
+androidx-compose-core-role = { group = "androidx.core", name = "core-role", version.ref = "roleManagerCompat" }
+androidx-compose-core-animation = { group = "androidx.core", name = "core-animation", version.ref = "coreAnimation" }
+androidx-compose-core-animation-testing = { group = "androidx.core", name = "core-animation-testing", version.ref = "coreAnimation" }
+androidx-compose-core-performance = { group = "androidx.core", name = "core-performance", version.ref = "corePerformance" }
+androidx-compose-core-remoteviews = { group = "androidx.core", name = "core-remoteviews", version.ref = "coreRemoteViews" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "browserExt" }
+androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "webkitExt" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerviewExt" }
+androidx-dynamicanimation-ktx = { group = "androidx.dynamicanimation", name = "dynamicanimation-ktx", version.ref = "dynamicanimation" }
+# For control over item selection of both touch and mouse driven selection
+androidx-recyclerview-selection = { group = "androidx.recyclerview", name = "recyclerview-selection", version.ref = "recyclerviewSelectionExt" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesExt" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout" }
+androidx-coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+androidx-compose-fragment = { group = "androidx.fragment", name = "fragment-compose", version.ref = "fragment" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+androidx-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment" }
+androidx-navigation-runtime = { group = "androidx.navigation3", name = "navigation3-runtime", version.ref = "navigationVer" }
+androidx-navigation-ui = { group = "androidx.navigation3", name = "navigation3-ui", version.ref = "navigationVer" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
