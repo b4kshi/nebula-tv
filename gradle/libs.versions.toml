@@ -1,5 +1,6 @@
 [versions]
 agp = "8.11.1"
+composeBomVersion = "2024.06.00"
 kotlin = "2.2.0"
 coreKtx = "1.16.0"
 appcompat = "1.7.1"
@@ -8,6 +9,12 @@ tvFoundation = "1.0.0-alpha12"
 tvMaterial = "1.0.1"
 lifecycleRuntimeKtx = "2.9.2"
 activityCompose = "1.10.1"
+hilt = "2.57"
+hiltExt = "1.2.0"
+androidxHiltNavigationCompose = "1.2.0"
+geckoviewExt="100.0.20220425210429"
+lifecycleViewModel="2.9.2"
+coroutinesExt="1.10.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,10 +29,29 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", version.ref = "tvFoundation" }
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewModel" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+#geckoview = { group = "org.mozilla.geckoview", name = "geckoview-nightly", version.ref = "geckoviewExt" }
+#androidx-compose-material3-adaptive = { group = "androidx.compose.material3", name = "material3-adaptive" }
+#androidx-compose-material3-adaptivelayout = { group = "androidx.compose.material3", name = "material3-adaptivelayout" }
+#androidx-compose-material3-adaptivenavigation = { group = "androidx.compose.material3", name = "material3-adaptivenavigation" }
+#androidx-compose-material3-adaptivenavigationsuite = { group = "androidx.compose.material3", name = "material3-adaptivenavigationsuite" }
+#androidx-compose-material3-windowsizeclass = { group = "androidx.compose.material3", name = "material3-windowsizeclass" }
+#androidx-compose-core-splashscreen = { group = "androidx.core", name = "splashscreen", version.ref = "composeBom" }
+#androidx-browser = { group = "androidx.browser", name = "browser" }
+#androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesExt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

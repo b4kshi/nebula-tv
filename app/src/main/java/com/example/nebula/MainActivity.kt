@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,6 +18,7 @@ import androidx.tv.material3.Surface
 import androidx.tv.material3.Text // Use M3 Text
 import com.example.nebula.ui.theme.NebulaTheme
 import androidx.compose.ui.text.style.TextAlign
+import com.example.nebula.AppGrid
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalTvMaterial3Api::class) // Opt-in for Material 3 TV components
@@ -25,7 +27,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             // Apply your TV-specific Material 3 Compose theme here
             NebulaTheme { // This is from androidx.tv.material3
-                Surface( // Use androidx.tv.material3.Surface
+                Surface(
+                    // Use androidx.tv.material3.Surface
                     modifier = Modifier.fillMaxSize(),
                     shape = RectangleShape, // TV apps often use RectangleShape
                 ) {
@@ -41,16 +44,19 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun LauncherHomeScreen() {
     // This is where main TV UI will be built.
-    Text(
-        text = "Welcome to Nebula TV!",
-        style = MaterialTheme.typography.labelLarge,
-        textAlign = TextAlign.Center
-    )
-    // TODO: Start building your Unified Launcher Home here based on PRD
-    // - App grid panel
-    // - Favorite apps panel
-    // - Browser tab management panel
-    // - Widget area
+    Column(modifier = Modifier.fillMaxSize()) {
+        Text(
+            text = "Welcome to Nebula TV!",
+            style = MaterialTheme.typography.labelLarge,
+            textAlign = TextAlign.Center
+        )
+        AppGrid(modifier = Modifier.weight(1f)) // AppGrid takes available space
+        // TODO: Start building your Unified Launcher Home here based on PRD
+        // - App grid panel
+        // - Favorite apps panel
+        // - Browser tab management panel
+        // - Widget area
+    }
 }
 
 @OptIn(ExperimentalTvMaterial3Api::class) // Opt-in for Material 3 TV components

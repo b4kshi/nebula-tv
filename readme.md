@@ -81,4 +81,10 @@ This product is a next-generation Android TV launcher and multi-tab browser, sea
 - User testing for navigation and customization flows
 - Integrate/validate with Firefox Sync, NASA/G.Earth live APIs, and at least one RSS provider
 
+### 10. **Sources of Inspiration for Design**
+
+- Muzli chrome extension
+- Momentum chrome extension
+- Emotn UI Launcher
+
 **This document outlines the direction and scope for building a modern, mythic-inspired, smart TV hub—uniting personal apps, synced browsing, widgets, and the wonder of the universe behind every screen.**
